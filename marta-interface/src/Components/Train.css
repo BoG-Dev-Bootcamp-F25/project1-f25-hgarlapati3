@@ -1,0 +1,128 @@
+/* .train-card {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 12px 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.train-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.train-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.train-destination {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.train-status {
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.train-status.on-time {
+  background-color: #4CAF50;
+}
+
+.train-status.delayed {
+  background-color: #ff9800;
+}
+
+.train-details {
+  font-size: 14px;
+  color: #666;
+}
+
+.train-details p {
+  margin: 4px 0;
+}
+
+.train-details strong {
+  color: #333;
+} */
+
+
+/* ========== TRAIN ROW (screenshot look) ========== */
+
+/* ====== ONE TRAIN ROW (mock styling) ====== */
+
+/* ========== TRAIN ROW (reference look) ========== */
+/* Layout: |  M  |  Station --> Next  |   8 min  | */
+
+/* ===== ONE TRAIN ROW (reference look) ===== */
+/* Layout: |  M  |  Station --> Next  |   8 min  | */
+
+.train-row {
+  display: grid;
+  grid-template-columns: 64px 1fr 90px;
+  align-items: center;
+  border-top: 2px solid #111;
+  padding: 12px 16px;
+  background: #fff;
+  color: #111;
+}
+.train-row:last-child {
+  border-bottom: 2px solid #111;
+}
+
+.train-icon {
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.train-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.train-route {
+  font-weight: 800;
+}
+.train-route .arrow {
+  color: #444;
+  margin: 0 6px;
+}
+
+.train-tags {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.badge {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.line-badge.gold { background: #ffdb58; color: #000; }
+.line-badge.red { background: #d32f2f; color: #fff; }
+.line-badge.blue { background: #1e40af; color: #fff; }
+.line-badge.green { background: #2e7d32; color: #fff; }
+
+.status-badge.on-time { color: #2e7d32; }
+.status-badge.delayed { color: #d32f2f; }
+
+.train-time {
+  justify-self: end;
+  font-weight: 800;
+  color: #2e7d32;
+  font-size: 15px;
+}
